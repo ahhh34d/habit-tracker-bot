@@ -1,0 +1,12 @@
+{
+  "name": "habit-tracker-bot",
+  "version": "1.0.0",
+  "description": "Telegram Habit Tracker Webhook — Ahmad Almuhajir",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

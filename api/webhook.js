@@ -83,7 +83,7 @@ async function handleMessage(message) {
   }
 
   if (text.startsWith("/tambah ")) {
-    const input = encodeURIComponent(text.replace("/tambah ", "").trim());
+    const input = text.replace("/tambah ", "").trim();
     await sendMessage(chatId, "➕ Menambahkan habit...");
     fireAndForget(`${APPS_SCRIPT_URL}?action=tambah&chatId=${chatId}&input=${input}`);
     return;
